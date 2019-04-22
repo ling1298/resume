@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/new_file.css" />
+		<link rel="stylesheet" href="swiper-4.5.0/dist/css/swiper.min.css" type="text/css">
+		<style>
+			#bg{background:rgba(0,0,0,0.5);/*背景颜色半透明opacity:0.5*/
+			    width:100%;height: 100%;position: fixed;left: 0;top: 0; z-index: 99999;display: none}
+        #login{width: 400px;height: 300px;background: white;position: fixed;left: 0; top: 0; z-index: 99999; display: none}
+        #login #title{color: white;background: #ff9933;width: 100%;height: 50px;line-height: 50px;font-size: 24px;}
+        #login #title .close{font-size: 24px;color: white;float: right;margin-right: 15px;text-decoration: none}
+        #login p{margin-top: 35px;margin-left: 10px;}
+        #login form p input{width:260px;height:35px;border:1px solid #dddddd;font-size: 18px;}
+        #login form p .text,.psw{background: rgba(250,255,189,1);}
+        #login form p .sub{margin-left: 65px;}
+		</style>
+	</head>
+	<body>
+		<div id="bg"></div>
+		<div id="login">
+			<div id="title">用户登录<a class="close" href="javascript:">&times;</a></div>
+			<form action="javascript:" target="" method="get">
+				<p>用户名：<input type="text" class="text" maxlength="26" id="uname"></p>
+				<p>密&nbsp;码：&nbsp;&nbsp;<input type="password" class="psw" maxlength="16" id="upwd" /></p>
+				<p><input type="submit" class="sub" value="登录" /></p>
+			</form>
+		</div>
+		<!-- 第1块 -->
+		<div>
+			<div class="g-topbar">
+				<div class="m-topbar">
+					<div class="f-cb">
+						<!-- 下载客户端 -->
+						<h2 class="logo"><a href="#"><img src="img/topbar (2).png"></a></h2>
+						<ul>
+							<li><a href="#">发现音乐</a></li>
+							<li><a href="#">我的音乐</a></li>
+							<li><a href="#">朋友</a></li>
+							<li><a href="#">商场</a></li>
+							<li><a href="#">音乐人</a></li>
+							<li><a href="#">下载客户端</a></li>
+						</ul>
+						<div class="srchbg">
+							<span class="srchbg-1">
+								<input type="text" placeholder="音乐/视频/电台/用户" />
+							</span>
+							<div class="dingwei">
+								<img src="img/topbar (3).png" />
+							</div>
+						</div>
+						<div class="topbar">
+							<a href="#">创作者中心</a>
+						</div>
+						<!-- 登录 -->
+						<div class="denglu">
+							<span>
+								<div id="href"><a class="dl" href="javascript:">登录</a></div>
+							</span>
+							<ul class="icn-yin">
+								<li class="denglu-1"><a href="#">手机号码登录</a></li>
+								<li class="denglu-1"><a href="#">QQ登录</a></li>
+								<li class="denglu-1"><a href="#">微信登录</a></li>
+								<li class="denglu-1"><a href="#">新浪微博登录</a></li>
+								<li class="denglu-1"><a href="#">网易邮箱登录</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>			
+			</div>
+			<div class="hotiao">
+				<div class="hotiao-1">
+					<ul>
+						<li>推荐</li>
+						<li>排行榜</li>
+						<li>歌单</li>
+						<li>主播电台</li>
+						<li>歌手</li>
+						<li>新歌上架</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 第2块 -->
+		<div class="example-1">
+			<div class="example">
+				<div class="ft-carousel" id="carousel_1">
+					<ul class="carousel-inner">
+						<li class="carousel-item"><img src="img/01.jpg" /></li>
+						<li class="carousel-item"><img src="img/02.jpg" /></li>
+						<li class="carousel-item"><img src="img/03.jpg" /></li>
+						<li class="carousel-item"><img src="img/04.jpg" /></li>
+						<li class="carousel-item"><img src="img/05.jpg" /></li>
+						<li class="carousel-item"><img src="img/06.jpg" /></li>
+					</ul>
+				</div>
+				<div class="download">
+					<a href="#">
+					</a>
+					<p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+				</div>
+			</div>
+		</div>
+		<!-- 第3块 -->
+		<div class="bjys">
+			<div class="discover-module">
+				<div class="g-bd1">
+					<div class="g-bd2">
+						<!-- 热门推荐 -->
+						<a href="#">热门推荐</a>
+						<div class="tab">
+							<a href="#"><span>华语 |</span></a>
+							<a href="#"><span>流行 |</span></a>
+							<a href="#"><span>摇滚 |</span></a>
+							<a href="#"><span>民谣 |</span></a>
+							<a href="#"><span>电子</span></a>
+						</div>
+						<span class="more">
+							<a href="#">更多</a>
+							<i class="more-1">&nbsp;</i>
+						</span>
+						<hr />
+						<!-- 热门推荐歌曲 -->
+						<ul class="m-cvrlst">
+							<li>
+								<div class="u-cover">
+									<div class="u-cover-1">
+										<img src="img/109951163985754484.jpg" />
+										<a title="失恋星球：当初所有的喜欢 都变成了心酸" href="#" class="msk"></a>
+										<div class="bottom">
+											<a class="icon-play " title="播放" href="#"></a>
+											<span class="icon-headset"></span>
+											<span class="nb">60万</span>
+											<p class="dec">
+												<a title="失恋星球：当初所有的喜欢 都变成了心酸" class="tit" href="#">
+													失恋星球：当初所有的喜欢 都变成了心酸
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="u-cover">
+									<div class="u-cover-1">
+										<img src="img/109951163984880726.jpg" />
+										<a title="春 日 放 空 摸 鱼 指 南" href="#" class="msk"></a>
+										<div class="bottom">
+											<a class="icon-play " title="播放" href="#"></a>
+											<span class="icon-headset"></span>
+											<span class="nb">60万</span>
+											<p class="dec">
+												<a title="春 日 放 空 摸 鱼 指 南" class="tit" href="#">
+													春 日 放 空 摸 鱼 指 南
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="u-cover">
+									<div class="u-cover-1">
+										<img src="img/109951163889081014.jpg" />
+										<a title="华语怀旧||寂寞让人盲，思念让人慌" href="#" class="msk"></a>
+										<div class="bottom">
+											<a class="icon-play " title="播放" href="#"></a>
+											<span class="icon-headset"></span>
+											<span class="nb">60万</span>
+											<p class="dec">
+												<a title="华语怀旧||寂寞让人盲，思念让人慌" class="tit" href="#">
+
+													华语怀旧||寂寞让人盲，思念让人慌
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="u-cover">
+									<div class="u-cover-1">
+										<img src="img/109951163969663824.jpg" />
+										<a title="下班谈谈心丨听听我的“老爸老妈浪漫史”" href="#" class="msk"></a>
+										<div class="bottom">
+											<a class="icon-play " title="播放" href="#"></a>
+											<span class="icon-headset"></span>
+											<span class="nb">60万</span>
+											<p class="dec">
+												<a title="下班谈谈心丨听听我的“老爸老妈浪漫史”" class="tit" href="#">
+													下班谈谈心丨听听我的“老爸老妈浪漫史”
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="u-cover">
+									<div class="u-cover-1">
+										<img src="img/109951163754920641.jpg" />
+										<a title="【80后90后KTV收藏】700首流行经典老歌怀旧" href="#" class="msk"></a>
+										<div class="bottom">
+											<a class="icon-play " title="播放" href="#"></a>
+											<span class="icon-headset"></span>
+											<span class="nb">60万</span>
+											<p class="dec">
+												<a title="【80后90后KTV收藏】700首流行经典老歌怀旧" class="tit" href="#">
+													【80后90后KTV收藏】700首流行经典老歌怀旧
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="u-cover">
+									<div class="u-cover-1">
+										<img src="img/109951163978422375.jpg" />
+										<a title="痴狂如他才算经典－皇后乐队" href="#" class="msk"></a>
+										<div class="bottom">
+											<a class="icon-play " title="播放" href="#"></a>
+											<span class="icon-headset"></span>
+											<span class="nb">60万</span>
+											<p class="dec">
+												<a title="痴狂如他才算经典－皇后乐队" class="tit" href="#">
+													痴狂如他才算经典－皇后乐队
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="u-cover">
+									<div class="u-cover-1">
+										<img src="img/109951162956237599.jpg" />
+										<a title="适合视频剪辑BGM的音乐" href="#" class="msk"></a>
+										<div class="bottom">
+											<a class="icon-play " title="播放" href="#"></a>
+											<span class="icon-headset"></span>
+											<span class="nb">60万</span>
+											<p class="dec">
+												<a title="适合视频剪辑BGM的音乐" class="tit" href="#">
+													适合视频剪辑BGM的音乐
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="u-cover">
+									<div class="u-cover-1">
+										<img src="img/109951163391639863.jpg" />
+										<a title="再见" href="#" class="msk"></a>
+										<div class="bottom">
+											<a class="icon-play " title="播放" href="#"></a>
+											<span class="icon-headset"></span>
+											<span class="nb">769万</span>
+											<p class="dec">
+												<a title="再见" class="tit" href="#">
+													<i class="u-icn-1"></i>再见
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- 新碟上架>轮播图 -->
+					<div class="n-new">
+						<div class="n-new-1">
+							<a href="#" class="hox">新碟上架</a>
+							<span class="more1"><a href="#" class="s-fc4">更多</a><i class="cor s-bg s-bg-6">&nbsp;</i></span>
+						</div>
+					</div>
+					<!-- 轮播图第2块 -->
+					<div class="lbt">
+						<div class="container">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="img/109951163954660081.jpg">
+										<p class="ziti" title="MAGIC">MAGIC</p>
+										<p class="ziti" title="back number">back number</p>
+									</div>
+									<div class="swiper-slide"><img src="img/109951163955005483.jpg" />
+										<p class="ziti" title="Kills You Slowly">Kills You Slowly</p>
+										<p class="ziti" title="The Chainsmokers">The Chainsmokers</p>
+									</div>
+									<div class="swiper-slide"><img src="img/109951163959066909.jpg" />
+										<p class="ziti" title="WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?" style="width: 90px;">WHEN WE ALL FALL
+											ASLEEP, WHERE DO WE GO?</p>
+										<p class="ziti" title="Billie Eilish">Billie Eilish</p>
+									</div>
+									<div class="swiper-slide"><img src="img/109951163959987702.jpg" />
+
+										<p class="ziti" title="壹九">壹九</p>
+										<p class="ziti" title="群星">群星</p>
+									</div>
+									<div class="swiper-slide"><img src="img/109951163968030986.jpg" />
+										<p class="ziti" title="사춘기집Ⅰ 꽃기운">사춘기집Ⅰ 꽃기운</p>
+										<p class="ziti" title="脸红的思春期">脸红的思春期</p>
+									</div>
+									<div class="swiper-slide"><img src="img/109951163969209358.jpg" />
+										<p class="ziti" title="MONOPOLY">MONOPOLY</p>
+										<p class="ziti" title="Ariana Grande">Ariana Grande</p>
+									</div>
+									<div class="swiper-slide"><img src="img/109951163976894362.jpg" />
+										<p class="ziti" title="钱正昊">神秘嘉宾</p>
+										<p class="ziti" title="钱正昊">钱正昊</p>
+									</div>
+									<div class="swiper-slide"><img src="img/109951163970259491.jpg" />
+										<p class="ziti">Untitled</p>
+										<p class="ziti">KOHH</p>
+									</div>
+								</div>
+								<!-- 如果需要分页器 -->
+								<!-- <div class="swiper-pagination"></div> -->
+
+								<!-- 如果需要导航按钮 -->
+								<!-- <div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div> -->
+
+								<!-- 如果需要滚动条 -->
+								<!-- <div class="swiper-scrollbar"></div> -->
+							</div>
+						</div>
+					</div>
+					<!-- 榜单，歌曲块 -->
+					<div class="n-bill">
+						<!-- 榜单 -->
+						<div class="v-hd2">
+							<a href="#" class="v-hd-1">榜单</a>
+							<span class="v-hd-2"><a href="#" class="v-hd-3">更多</a>
+								<i class="v-hd-4">&nbsp;</i>
+							</span>
+						</div>
+						<!-- 歌曲块 -->
+						<div class="n-bilst">
+							<!-- 歌曲，云音乐飙升榜，第1块 -->
+							<dl class="n-bilst-1">
+								<dt class="n-bilst-2">
+									<div class="n-bilst-3">
+										<img src="img/18696095720518497.jpg" class="n-bilst-4" />
+										<a href="#" title="云音乐飙升榜"></a>
+									</div>
+									<div class="tit">
+										<a href="#" title="云音乐飙升榜">
+											<h3 class="tit-1">云音乐飙升榜</h3>
+										</a>
+										<div class="btn">
+											<a href="#" class="btn-1" title="播放">&nbsp;</a>
+											<a href="#" class="btn-2" title="收藏">收藏</a>
+										</div>
+									</div>
+								</dt>
+								<dd>
+									<ol style="margin-left: 30px;line-height: 32px">
+										<li class="geq">
+											<span class="geq-1" style="color: red;">1</span>
+											<a href="#" class="geq-2" title="有可能的夜晚" style="text-decoration: none; color: #000000;font-size: 14px;">有可能的夜晚</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1" style="color: red;">2</span>
+											<a href="#" class="geq-2" title="FLY (加强版)" style="text-decoration: none; color: #000000;font-size: 14px;">FLY
+												(加强版)</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq" style="margin-top: -3px;">
+											<span class="geq-1" style="color: red;">3</span>
+											<a href="#" class="geq-2" title="今天也想见到你" style="text-decoration: none; color: #000000;font-size: 14px;">今天也想见到你</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">4</span>
+											<a href="#" class="geq-2" title="一个人的城市" style="text-decoration: none; color: #000000;font-size: 14px;">一个人的城市</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq" style="margin-top: -3px;">
+											<span class="geq-1">5</span>
+											<a href="#" class="geq-2" title="残缺的彩虹" style="text-decoration: none; color: #000000;font-size: 14px;">残缺的彩虹</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">6</span>
+											<a href="#" class="geq-2" title="未证实的答案" style="text-decoration: none; color: #000000;font-size: 14px;">未证实的答案</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">7</span>
+											<a href="#" class="geq-2" title="欠我个未来" style="text-decoration: none; color: #000000;font-size: 14px;">欠我个未来</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq" style="margin-top: -1px;">
+											<span class="geq-1">8</span>
+											<a href="#" class="geq-2" title="Tonight" style="text-decoration: none; color: #000000;font-size: 14px;">Tonight</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">9</span>
+											<a href="#" class="geq-2" title="渡我不渡她" style="text-decoration: none; color: #000000;font-size: 14px;">渡我不渡她</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">10</span>
+											<a href="#" class="geq-2" title="只是太爱你" style="text-decoration: none; color: #000000;font-size: 14px;">只是太爱你</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+									</ol>
+									<div class="more1-1">
+										<a href="#" class="s-fc0">查看全部&gt;</a>
+									</div>
+								</dd>
+							</dl>
+							<!-- 歌曲，网易原创歌曲榜，第2块 -->
+							<dl class="n-bilst-1">
+								<dt class="n-bilst-2">
+									<div class="n-bilst-3">
+										<img src="img/18740076185638788.jpg" class="n-bilst-4" />
+										<a href="#" title="网易原创歌曲榜"></a>
+									</div>
+									<div class="tit">
+										<a href="#" title="网易原创歌曲榜">
+											<h3 class="tit-1">网易原创歌曲榜</h3>
+										</a>
+										<div class="btn">
+											<a href="#" class="btn-1" title="播放">&nbsp;</a>
+											<a href="#" class="btn-2" title="收藏">收藏</a>
+										</div>
+									</div>
+								</dt>
+								<dd>
+									<ol style="margin-left: 30px;line-height: 32px">
+										<li class="geq">
+											<span class="geq-1" style="color: red;">1</span>
+											<a href="#" class="geq-2" title="你的姑娘" style="text-decoration: none; color: #000000;font-size: 14px;">你的姑娘</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1" style="color: red;">2</span>
+											<a href="#" class="geq-2" title="胆小鬼" style="text-decoration: none; color: #000000;font-size: 14px;">胆小鬼</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq" style="margin-top: -3px;">
+											<span class="geq-1" style="color: red;">3</span>
+											<a href="#" class="geq-2" title="桥下" style="text-decoration: none; color: #000000;font-size: 14px;">桥下</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">4</span>
+											<a href="#" class="geq-2" title="坏人建筑" style="text-decoration: none; color: #000000;font-size: 14px;">坏人建筑</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq" style="margin-top: -3px;">
+											<span class="geq-1">5</span>
+											<a href="#" class="geq-2" title="一个人的城市" style="text-decoration: none; color: #000000;font-size: 14px;">一个人的城市</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">6</span>
+											<a href="#" class="geq-2" title="YUNG LIT WAY" style="text-decoration: none; color: #000000;font-size: 14px;">YUNG
+												LIT WAY</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">7</span>
+											<a href="#" class="geq-2" title="晚安，我爱你" style="text-decoration: none; color: #000000;font-size: 14px;">晚安，我爱你</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq" style="margin-top: -1px;">
+											<span class="geq-1">8</span>
+											<a href="#" class="geq-2" title="去见你" style="text-decoration: none; color: #000000;font-size: 14px;">去见你</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">9</span>
+											<a href="#" class="geq-2" title="路过人间" style="text-decoration: none; color: #000000;font-size: 14px;">路过人间</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">10</span>
+											<a href="#" class="geq-2" title="我在风里等你" style="text-decoration: none; color: #000000;font-size: 14px;">我在风里等你</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+									</ol>
+									<div class="more1-1">
+										<a href="#" class="s-fc0">查看全部&gt;</a>
+									</div>
+								</dd>
+							</dl>
+							<!-- 歌曲，云音乐新歌榜，第3块 -->
+							<dl class="n-bilst-1">
+								<dt class="n-bilst-2">
+									<div class="n-bilst-3">
+										<img src="img/18713687906568048.jpg" class="n-bilst-4" />
+										<a href="#" title="云音乐新歌榜"></a>
+									</div>
+									<div class="tit">
+										<a href="#" title="云音乐新歌榜">
+											<h3 class="tit-1">云音乐新歌榜</h3>
+										</a>
+										<div class="btn">
+											<a href="#" class="btn-1" title="播放">&nbsp;</a>
+											<a href="#" class="btn-2" title="收藏">收藏</a>
+										</div>
+									</div>
+								</dt>
+								<dd style="margin-bottom: 25px;">
+									<ol style="margin-left: 30px;line-height: 32px">
+										<li class="geq">
+											<span class="geq-1" style="color: red;">1</span>
+											<a href="#" class="geq-2" title="有可能的夜晚" style="text-decoration: none; color: #000000;font-size: 14px;">有可能的夜晚</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1" style="color: red;">2</span>
+											<a href="#" class="geq-2" title="FLY (加强版)" style="text-decoration: none; color: #000000;font-size: 14px;">FLY
+												(加强版)</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq" style="margin-top: -3px;">
+											<span class="geq-1" style="color: red;">3</span>
+											<a href="#" class="geq-2" title="今天也想见到你" style="text-decoration: none; color: #000000;font-size: 14px;">今天也想见到你</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">4</span>
+											<a href="#" class="geq-2" title="一个人的城市" style="text-decoration: none; color: #000000;font-size: 14px;">一个人的城市</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq" style="margin-top: -3px;">
+											<span class="geq-1">5</span>
+											<a href="#" class="geq-2" title="残缺的彩虹" style="text-decoration: none; color: #000000;font-size: 14px;">残缺的彩虹</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">6</span>
+											<a href="#" class="geq-2" title="未证实的答案" style="text-decoration: none; color: #000000;font-size: 14px;">未证实的答案</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">7</span>
+											<a href="#" class="geq-2" title="欠我个未来" style="text-decoration: none; color: #000000;font-size: 14px;">欠我个未来</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq" style="margin-top: -1px;">
+											<span class="geq-1">8</span>
+											<a href="#" class="geq-2" title="Tonight" style="text-decoration: none; color: #000000;font-size: 14px;">Tonight</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">9</span>
+											<a href="#" class="geq-2" title="渡我不渡她" style="text-decoration: none; color: #000000;font-size: 14px;">渡我不渡她</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+										<li class="geq">
+											<span class="geq-1">10</span>
+											<a href="#" class="geq-2" title="只是太爱你" style="text-decoration: none; color: #000000;font-size: 14px;">只是太爱你</a>
+											<div class="geq-3">
+												<a href="#" class="geq-4" title="播放"></a>
+												<a href="#" class="geq-5" title="添加到播放列表"></a>
+												<a href="#" class="geq-6" title="收藏"></a>
+											</div>
+										</li>
+									</ol>
+									<div class="more1-1">
+										<a href="#" class="s-fc0">查看全部&gt;</a>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<!-- 右侧栏 -->
+				<div class="you">
+					<!-- 右侧，用户登录 -->
+					<div  class="you-1">
+						<p class="note ">登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+						<a href="javascript:" class="btn dl">用户登录</a>
+					</div>
+					<!-- 右侧，入驻歌手 -->
+					<div class="singer-r">
+						<h3 class="f-1">
+							<span class="f-fl">入驻歌手</span>
+							<a href="/discover/artist/signed/" class="s-f3">查看全部 &gt;</a>
+						</h3>
+						<ul class="right1">
+							<li class="right2">
+								<a href="#" class="itm1">
+									<div class="head"><img class="j-img" src="img/5931865232210340.jpg"></div>
+									<div class="ifo">
+										<h4 class="f-thide"><span class="f-thide">张惠妹aMEI</span></h4>
+										<p class="f-thide-1">台湾歌手张惠妹</p>
+									</div>
+								</a>
+							</li>
+							<li class="right2">
+								<a href="#" class="itm1">
+									<div class="head"><img class="j-img" src="img/3302932937408956.jpg"></div>
+									<div class="ifo">
+										<h4 class="f-thide"><span class="f-thide">Fine乐团</span></h4>
+										<p class="f-thide-1">独立音乐人</p>
+									</div>
+								</a>
+							</li>
+							<li class="right2">
+								<a href="#" class="itm1">
+									<div class="head"><img class="j-img" src="img/19027048718765608.jpg"></div>
+									<div class="ifo">
+										<h4 class="f-thide"><span class="f-thide">萬曉利</span></h4>
+										<p class="f-thide-1">民谣歌手、中国现代民谣的代表人物之一</p>
+									</div>
+								</a>
+							</li>
+							<li class="right2">
+								<a href="#" class="itm1">
+									<div class="head"><img class="j-img" src="img/7943971513291094.jpg"></div>
+									<div class="ifo">
+										<h4 class="f-thide"><span class="f-thide">音乐人赵雷</span></h4>
+										<p class="f-thide-1">民谣歌手</p>
+									</div>
+								</a>
+							</li>
+							<li class="right2">
+								<a href="#" class="itm1">
+									<div class="head"><img class="j-img" src="img/109951163892302996.jpg"></div>
+									<div class="ifo">
+										<h4 class="f-thide"><span class="f-thide">王三溥</span></h4>
+										<p class="f-thide-1">音乐人</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a target="_blank" href="#" hidefocus="true" class="u-btn2-1"><i>申请成为网易音乐人</i></a>
+					<!-- 右侧，热门主播 -->
+					<div class="n-dj" style="width: 250px; box-sizing: border-box;">
+						<h3 class="v-hd3">热门主播</h3>
+						<ul class="v-hd4">
+							<li class="hd6">
+								<a><img class="hd5" src="img/1407374893913311.jpg"></a>
+								<div class="info">
+									<a href="#" class="fc0">陈立</a>
+									<a class="diangw"></a>
+									<p class="s-fc3">心理学家、美食家陈立教授</p>
+								</div>
+							</li>
+							<li class="hd6">
+								<a><img src="img/7942872001461517.jpg"></a>
+								<div class="info">
+									<a href="#" class="fc0">DJ艳秋</a>
+									<a class="diangw"></a>
+									<p class="s-fc3">著名音乐节目主持人</p>
+								</div>
+							</li>
+							<li class="hd6">
+								<a><img src="img/3427177769086282.jpg"></a>
+								<div class="info">
+									<a href="#" class="fc0">国家大剧院古典音乐频道</a>
+									<a class="diangw"></a>
+									<p class="s-fc3">国家大剧院古典音乐官方</p>
+								</div>
+							</li>
+							<li class="hd6">
+								<a><img src="img/3130309604335651.jpg"></a>
+								<div class="info">
+									<a href="#" class="fc0">谢谢收听</a>
+									<a class="diangw"></a>
+									<p class="s-fc3">南京电台主持人王馨</p>
+								</div>
+							</li>
+							<li class="hd6">
+								<a><img src="img/3440371884651965.jpg"></a>
+								<div class="info">
+									<a href="#" class="fc0">DJ晓苏</a>
+									<a class="diangw"></a>
+									<p class="s-fc3">独立DJ，CRI环球旅游广播特邀DJ</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--第四块 底部 -->
+		<div class="g-ft">
+			<div class="m-ft">
+				<div class="wrap f-cb">
+					<div class="copy">
+						<p class="link">
+							<a href="#" target="_blank" class="item s-fc4">关于网易</a><span class="line">|</span>
+							<a href="#" target="_blank" class="item s-fc4">客户服务</a><span class="line">|</span>
+							<a href="#" target="_blank" class="item s-fc4">服务条款</a><span class="line">|</span>
+							<a href="#" target="_blank" class="item s-fc4">网站导航</a><span class="line">|</span>
+							<a id="g_feedback" href="#" class="s-fc4" onclick="nm.x.feedback();return false;" hidefocus="true">意见反馈</a>
+						</p>
+						<p class="right s-fc3">
+							<span class="sep span">网易公司版权所有©1997-2019</span><span class="span">杭州乐读科技有限公司运营：</span><a href="#" target="_blank"
+							 class="alink s-fc3">浙网文[2018]3506-263号</a>
+						</p>
+						<p class="contact s-fc3">
+							<span class="sep span">违法和不良信息举报电话：0571-89853516</span>
+							<span class="span">举报邮箱：</span><a class="alink" href="#">ncm5990@163.com</a>
+						</p>
+					</div>
+					<ul class="enter f-fr">
+						<li class="unit">
+							<a class="logo logonew logo-auth f-tid" href="#" target="_blank"></a>
+							<span class="tt tt-auth"></span>
+						</li>
+						<li class="unit">
+							<a class="logo logonew logo-musician f-tid" href="#" target="_blank"></a>
+							<span class="tt tt-musician"></span>
+						</li>
+						<li class="unit">
+							<a class="logo logonew logo-reward f-tid" href="#" target="_blank"></a>
+							<span class="tt tt-reward"></span>
+						</li>
+						<li class="unit">
+							<a class="logo logonew logo-cash f-tid" href="#" target="_blank"></a>
+							<span class="tt tt-cash"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<iframe src="../footer/footer.html" frameborder="0" scrolling="no" class="my_footer"></iframe>
+			</div>
+		</div>
+		<a title="回到顶部" class="m-back" href="#" id="g_backtop" hidefocus="true">回到顶部</a>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/ft-carousel.min.js"></script>
+		<script src="swiper-4.5.0/dist/js/swiper.min.js"></script>
+		<script type="text/javascript">
+			$("#carousel_1").FtCarousel();
+		</script>
+		<script src="js/banner.js"></script>
+		
+		<script>
+			playauto(); //playauto()函数控制弹出框居中显示
+			function playauto() {
+				var _width = $(window).width(); //获取浏览器窗口宽度
+				var _height = $(window).height(); //获取高度
+				$(" #login").css({
+					left: _width / 2 - 300,
+					top: _height / 2 - 175
+				}); //使弹出框居中
+			}
+			//动态改变浏览器窗口时执行
+			$(window).resize(function() {
+				playauto(); //浏览器窗口大小改变，则重新执行playauto()函数，使弹出框居中
+			});
+			$(".dl").click(function() { //点击超链接按钮显示bg、login样式
+				playauto(); //再次点击登陆按钮时，弹出框仍然处于居中位置
+				$("#bg").show();
+				$("#login").show();
+			})
+			$(".close").click(function() { //点击弹出框上的X按钮隐藏bg、login样式，即关闭弹出框
+				$("#bg").hide();
+				$("#login").hide();
+			});
+			$("#login").mousedown(function(e) {
+				var x = e.clientX; //鼠标按下的X坐标
+				var y = e.clientY; //鼠标按下的Y坐标
+				var $left = $("#login").offset().left; //登陆框距离左边位置
+				var $top = $("#login").offset().top; //登陆框距离顶部位置
+				var l = x - $left; //点击的坐标点距离弹出框左边的距离
+				var t = y - $top; //点击的坐标点距离弹出框上边的距离
+				$(document).mousemove(function(e) {
+					var nx = e.clientX;
+					var ny = e.clientY;
+					var n_left = nx - l; //动态得到弹出框距离浏览器左边距离
+					var n_top = ny - t; //动态得到弹出框距离浏览器上边距离
+					$(" #login").css({
+						left: n_left,
+						top: n_top
+					});
+				});
+				$(document).mouseup(function() {
+					$(document).unbind("mousemove"); //解除鼠标移动事件
+					$(document).unbind("mouseup");
+				})
+			})
+		</script>
+	</body>
+</html>
